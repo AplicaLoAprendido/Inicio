@@ -1,33 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-Es">
 
 <head>
-  <title>Tutor &mdash; Free Website Template by Colorlib</title>
+  <title>DatatesT</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!--Logo en pestaña-->
+  <link rel="shortcut icon" type="image/x-icon" href="images/DT.png">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="fonts/brand/style.css">
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/aos.css">
-
   <!-- MAIN CSS -->
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-
   <div class="site-wrap" id="home-section">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -36,40 +31,33 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-
-    <header class="site-navbar light site-navbar-target" role="banner">
-
+    <!--Nav-bar Start-->
+    <header class="site-navbar light site-navbar-target">
       <div class="container">
         <div class="row align-items-center position-relative">
-
-          <div class="col-3">
+          <div class="col-6 text-danger">
             <div class="site-logo">
-              <a href="index.html"><strong>Tutor</strong></a>
+              <a href="index.html"><img src="images/DT.png" alt="img-logo"><small> DATATEST </small></a>
             </div>
           </div>
-
-          <div class="col-9  text-right">
-
-            <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
+          <div class="col-6 text-right">
+            <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span
+                  class="icon-menu h1  text-white"></span></a></span>
 
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="tutorials.html" class="nav-link">Tutorials</a></li>
-                <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li class="active"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="tutorials.html" class="nav-link">Cursos</a></li>
+                <li><a href="services.html" class="nav-link">Servicios</a></li>
+                <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                <li class="active"><a href="contact.html" class="nav-link">Contacto</a></li>
               </ul>
             </nav>
           </div>
-
-
         </div>
       </div>
-
     </header>
-
+    <!--Nav-bar End-->
 
     <div class="site-section-cover overlay" style="background-image: url('images/hero_bg.jpg');">
 
@@ -83,50 +71,51 @@
     </div>
 
 
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="100315755160852"
+theme_color="#00a2e8"
+logged_in_greeting="¡Hola y bienvenido! "
+logged_out_greeting="¡Hola y bienvenido! ">
+</div>
+
 
 
     <div class="site-section bg-light" id="contact-section">
       <div class="container">
-        
+
         <div class="row">
-          <div class="col-lg-8 mb-5" >
-            <form action="#" method="post">
-              <div class="form-group row">
-                <div class="col-md-6 mb-4 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6 mr-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
-                </div>
-              </div>
-            </form>
-          </div>
+          <div class="col-lg-8 mb-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.174519887505!2d-98.8859209553156!3d19.49112600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e6ff11614e59%3A0xef0e471b1360d01b!2sUniversidad%20Aut%C3%B3noma%20Chapingo!5e0!3m2!1ses!2smx!4v1602390396171!5m2!1ses!2smx" width="600;" height="600"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>          </div>
           <div class="col-lg-4 ml-auto">
             <div class="bg-white p-3 p-md-5">
-              <h3 class="text-black mb-4">Contact Info</h3>
+              <h3 class="text-black mb-4">Contactanos</h3>
               <ul class="list-unstyled footer-link">
                 <li class="d-block mb-3">
-                  <span class="d-block text-black">Address:</span>
-                  <span>34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
-                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
+                  <span class="d-block text-black">Dirección:</span>
+                  <span>Carretera Federal México-Texcoco Km 38.5, Universidad Autonoma Chapingo, 56230 Texcoco, Méx.</span></li>
+                <li class="d-block mb-3"><span class="d-block text-black" ></span><span></span></li>
+                <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -138,77 +127,54 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <h2 class="footer-heading mb-4">About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-            <ul class="list-unstyled social">
-              <li><a href="#"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-instagram"></span></a></li>
-              <li><a href="#"><span class="icon-twitter"></span></a></li>
-              <li><a href="#"><span class="icon-linkedin"></span></a></li>
-            </ul>
+            <a class="site-logo-footer"><img src="images/DT.png" alt="LOGO"> DATATEST</a>
           </div>
           <div class="col-lg-8 ml-auto">
-            <div class="row">
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="row text-center text-black">
+              <div class="col-lg-2">
+                <h2 class="footer-heading mb-4"><a href="index.html"> Inicio </a></h2>
+              </div>
+              <div class="col-lg-2">
+                <h2 class="footer-heading mb-4"><a href="tutorials.html"> Cursos </a></h2>
+              </div>
+              <div class="col-lg-2">
+                <h2 class="footer-heading mb-4"><a href="services.html"> Servicios </a></h2>
+              </div>
+              <div class="col-lg-2                                            ">
+                <h2 class="footer-heading mb-4"><a href="about.html"> Nosotros </a></h2>
               </div>
               <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Resources</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Support</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <h2 class="footer-heading mb-4">Company</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                <h2 class="footer-heading mb-4">
+                  <p>Redes sociales</p>
+                </h2>
+                <ul class="list-unstyled social">
+                  <li><a href="https://www.facebook.com/DatatestOficial/" target="_blank"><span
+                        class="icon-facebook"></span></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCCvq5NPsAGVJbb2i6guPptw?view_as=subscriber"
+                      target="_blank"><span class="icon-youtube"></span></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
+        <div class="row pt-1 mt-5 text-center">
           <div class="col-md-12">
-            <div class="border-top pt-5">
+            <div class="border-top pt-0">
               <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear()); </script>
+                All rights reserved | <i class="icon-heart text-danger" aria-hidden="true"></i>
+                <a href="index.html"> DT </a>
+                <!--Para abrir enlaces en una nueva pestaña agrega: target="_blank" : frente a href=""-->
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
-
+    <!-- End Footer-->
   </div>
-
+  <!--Scripts Java-->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -220,10 +186,8 @@
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
-
   <script src="js/main.js"></script>
 
 </body>
 
 </html>
-

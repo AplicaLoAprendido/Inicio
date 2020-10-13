@@ -460,6 +460,25 @@ h1, h2, h3, h4, h5,
       .site-navbar .site-logo {
         float: left;
         position: relative; } }
+   .site-logo img {
+      width: auto;
+      height: auto;
+      max-height: 32px;
+      max-width: 32px;
+  }
+  .icon-course img {
+    width: auto;
+    height: auto;
+    max-height: 20px;
+    max-width: 20px;
+  }
+  .site-logo-footer img {
+    width: auto;
+    height: auto;
+    max-height: 20px;
+    max-width: 20px;
+  }
+    
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important; }
   .site-navbar .site-navigation .site-menu {
@@ -774,16 +793,16 @@ h1, h2, h3, h4, h5,
   .site-section-cover,
   .site-section-cover .container {
     position: relative;
-    z-index: 2; }
+    z-index: 1; }
   .site-section-cover,
   .site-section-cover .container > .row {
-    height: calc(100vh - 196px);
+    height: calc(125vh - 196px);
     min-height: 577px; }
     @media (max-width: 991.98px) {
       .site-section-cover,
       .site-section-cover .container > .row {
-        height: calc(70vh - 196px);
-        min-height: 400px; } }
+        height: calc(125vh - 196px);
+        min-height: 400; } }
   .site-section-cover.overlay {
     position: relative; }
     .site-section-cover.overlay:before {
@@ -793,13 +812,14 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.5);
       z-index: 1; }
   .site-section-cover.inner-page,
   .site-section-cover.inner-page .container > .row {
     height: auto;
     min-height: auto;
-    padding: 2em 0; }
+    max-height: 1080px;
+    padding: 0; }
   .site-section-cover.img-bg-section {
     background-size: cover;
     background-repeat: no-repeat; }
