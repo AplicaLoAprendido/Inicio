@@ -22,6 +22,28 @@
 
 <body>
 
+  <!-- Load Facebook SDK for JavaScript 
+-->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v8.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <div class="fb-customerchat" attribution=setup_tool page_id="100315755160852" theme_color="#00a2e8"
+    logged_in_greeting="¡Hola y bienvenido! " logged_out_greeting="¡Hola y bienvenido! ">
+  </div>
 
 
   <div class="site-wrap" id="home-section">
@@ -85,49 +107,26 @@
       </div>
     </div>
 
-      <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v8.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-  <div class="fb-customerchat" attribution=setup_tool page_id="100315755160852" theme_color="#00a2e8"
-    logged_in_greeting="¡Hola y bienvenido! " logged_out_greeting="¡Hola y bienvenido! ">
-  </div>
-
-    
     <!--Info-->
     <div class="site-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 mb-5 mb-lg-0">
-            <img src="images/hero_bg.jpg" alt="Image" class="img-fluid rounded">
+          <div class="col-lg-7  mb-5 mb-lg-0">
+            <img src="images/Cursos.jpg" alt="Image" class="img-fluid rounded">
           </div>
           <div class="col-lg-5 ml-auto">
             <div class="heading mb-4">
-              <span class="caption">Cursos</span>
-              <h2>Origen</h2>
+              <span class="caption">Origen</span>
+              <h2>Cursos</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit suscipit, repudiandae similique
-              accusantium eius nulla quam laudantium sequi.</p>
-            <p>Debitis voluptates corporis saepe molestias tenetur ab quae, quo earum commodi, laborum dolore, fuga
-              aliquid delectus cum ipsa?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati earum sed odit. Ullam
-              molestiae laudantium minus eaque ab fugit, maiores autem, modi quis eum aliquid sint voluptatibus
-              doloremque fuga illo quidem eius. Maiores deserunt tempora ut alias in delectus.</p>
-          </div>
+            <p>
+              La educación y aprendizage son independientes de tener que asistir a una escuela, el aprender por nuestra cuenta muchas veces genera mejores resultados que tener que asistir a clases solo por cumplir.
+            </p>
+            <p>
+              El sistema educativo escolar tiene muchos fallos, el más comun para Ciencia de datos es el atraso tecnológico, actualmente nos enfrentamos a nuevos problemas con las grandes fuentes de información que se traducen en datos que pueden ser analizados, desafortunadamente estas nuevas tecnologias no son impartidas en el salón de clases, por lo que toca aprender por nuestra cuenta.
+            </p>
+            <p>
+              Es por estas razones que el acceso a las nuevas tecnologías de Ciencia de datos deberian ser posible para todos, nosotros ya recorrimos este camino y si quieres aprender queremos ayudarte.            </p>
         </div>
       </div>
     </div>
@@ -146,38 +145,69 @@
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="testimonial-2">
-              <h3 class="h5">Excellent Teacher!</h3>
+              <h3 class="h5 text-center">Autodidacta</h3>
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis
-                  commodi harum, iste quae repudiandae facilis veniam nam earum nulla sunt fuga magnam ipsum obcaecati.
-                  Rem, atque recusandae! Ipsum veniam laboriosam quisquam in veritatis tempora architecto porro ea
-                  eveniet qui?</p>
+                <p>
+                  La Ciencia de datos es muy útil para la toma de decisiones, sea para negocios o investigación.
+                </p>
+                <p>
+                  El conocimiento es la mejor inversión, invertir en nosotros nos genera mejores oportunidades.
+                </p>
+                <p>
+                  Al no tener que seguir el ritmo de un grupo,
+                  se puede dedicar más tiempo en lo que se tiene
+                  dificultades y menos a lo que resulta más fácil.
+                </p>
+                <p>
+                  Aprende a resolver los problemas por ti mismo,
+                  pero no temas en preguntar si no sabes.
+                </p>
+                <p>Buscamos fomentar la curiosidad, la investigación 
+                  y la autodisciplina.
+                </p>
+  
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2">
-              <h3 class="h5">Best Video Tutorial!</h3>
+            <div class="testimonial-2 heading">
+              <h3 class="h5 text-center">Enseñar para aprender</h3>
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum"</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis sapiente obcaecati nisi
-                  fuga saepe accusamus quidem doloremque voluptate assumenda et illo accusantium cumque tempore
-                  necessitatibus sit voluptatem nulla magni, ut iusto! Iusto doloribus, quia commodi quidem veritatis
-                  corrupti a ipsam hic corporis inventore est illo, impedit laborum, possimus molestias.</p>
+                <p>
+                  Ciertamente al enseñar a otros aprendemos,
+                  en muchas de las ocasiones enseñar a otros
+                  nos ayuda a fortalecer el aprendizaje y 
+                  lograr explicarlo de manera mas sencilla,
+                  para los demás y para nosotros mismos.
+                </p>
+                <p>
+                  Enseñar te obliga a estar siempre actualizado 
+                  en tendencias, tecnologias y de técnicas más
+                  nuevas, por lo cual estarás siempre vigente 
+                  y listo para desempeñarte en tu propio campo.
+                </p>
+                <p>
+                  Tienes la posibilidad de encontrarte con lo más 
+                  nuevo del pensamiento especializado en tu ambito de interes.
+                </p>
             </div>
           </div>
           <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2">
-              <h3 class="h5">Easy to Understand!</h3>
+            <div class="testimonial-2 ">
+              <h3 class="h5 text-center">Ayuda</h3>
               <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum"</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime velit voluptates,
-                  assumenda quae, delectus praesentium harum blanditiis, amet tempora facere sapiente eum alias quos ad
-                  fugit ipsa! Eligendi, architecto voluptas, possimus illo eius inventore non natus aut in debitis
-                  repellat dolores sint maiores, pariatur eaque tempora! Sit, ducimus commodi.</p>
-            </div>
+                <p>
+                  Tu tienes conocimiento que nosotros desconocemos,
+                  esto se convierte en algo muy entretenido porque todos 
+                  tenemos conocimiento y todos somos ignorantes, solo no
+                  ignoramos las mismas cosas.
+                </p>
+                <p>
+                  En este sentido todos podemos ayudarnos, adquiriendo 
+                  nuevo conocimiento y compartiendolo, esto tambien 
+                  nos veneficia en otros ámbitos de nuestra vida, mejorando de
+                  esta manera nuestra calidad de vida y mejorando la calidad de vida de los demas.
+                </p>
+              </div>
           </div>
         </div>
       </div>
@@ -189,135 +219,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
-            <img src="images/hero_bg.jpg" alt="Image" class="img-fluid rounded">
+            <img src="images/Servicios.jpg" alt="Image" class="img-fluid rounded">
           </div>
           <div class="col-lg-5 mr-auto">
             <div class="heading mb-4">
-              <span class="caption">About us</span>
-              <h2>Our Company</h2>
+              <span class="caption">Origen</span>
+              <h2>Servicios</h2>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit suscipit, repudiandae similique
-              accusantium eius nulla quam laudantium sequi.</p>
-            <p>Debitis voluptates corporis saepe molestias tenetur ab quae, quo earum commodi, laborum dolore, fuga
-              aliquid delectus cum ipsa?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quas quod modi recusandae eos neque qui et
-              hic repellat, odit unde asperiores voluptate cum temporibus maxime eius voluptatum corporis beatae
-              distinctio magni amet quae, facere ratione? Aperiam, accusantium nam? In.</p>
+            <p>
+              Definitavamente no es para todos la Ciencia de datos, por eso no tenemos
+              problemas en compartir nuestro conocimiento, así como a unos no les interesa
+              aprender a cocinar, desarrollo web, leyes etc. asi mismo es con 
+              la Ciencia de datos, no te interesa aprender pero la llegas a utilizar.
+            </p>
+            <p>
+              Es por esto que ponemos a tu dispocicion nuestro servicio de Analisis de datos,
+              el Analisis de datos que forma parte de esta amplia Ciencia de los datos, es
+              nuestra pasión, nosotros encontramos muy entretenido y enriquecedor el 
+              resolver problemas que involucran datos.
+            </p>
+            <p>
+              ¡Si requieres analizar datos, cuenta con nosotros!
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!--Itro to courses
-    <div class="site-section bg-light pb-0">
-      <div class="container">
-        <div class="row align-items-stretch overlap">
-          <div class="col-lg-8">
-            <div class="box h-100">
-              <div class="d-flex align-items-center">
-                <div class="img"><img src="images/img_1.jpg" class="img-fluid" alt="Image"></div>
-                <div class="text">
-                  <a href="#" class="category">Tutorial</a>
-                  <h3><a href="#">Learning React Native</a></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quidem totam exercitationem eveniet
-                    blanditiis nulla, et possimus, itaque alias maxime!</p>
-                  <p class="mb-0">
-                    <span class="brand-react h5"></span>
-                    <span class="brand-javascript h5"></span>
-                  </p>
-                  <p class="meta">
-                    <span class="mr-2 mb-2">1hr 24m</span>
-                    <span class="mr-2 mb-2">Advanced</span>
-                    <span class="mr-2 mb-2">Jun 18, 2020</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="box small h-100">
-              <div class="d-flex align-items-center mb-2">
-                <div class="img"><img src="images/img_2.jpg" class="img-fluid" alt="Image"></div>
-                <div class="text">
-                  <a href="#" class="category">Tutorial</a>
-                  <h3><a href="#">Learning React Native</a></h3>
-                </div>
-              </div>
-              <div class="d-flex align-items-center mb-2">
-                <div class="img"><img src="images/img_3.jpg" class="img-fluid" alt="Image"></div>
-                <div class="text">
-                  <a href="#" class="category">Tutorial</a>
-                  <h3><a href="#">Learning React Native</a></h3>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <div class="img"><img src="images/img_4.jpg" class="img-fluid" alt="Image"></div>
-                <div class="text">
-                  <a href="#" class="category">Tutorial</a>
-                  <h3><a href="#">Learning React Native</a></h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
-
-    <!--Barra de cursos
-    <div class="site-section">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="heading mb-4">
-              <span class="caption">Tutorial Courses</span>
-              <h2>Choose Course</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-adobeillustrator"></span>
-              <h3>Illustrator</h3>
-            </a>
-          </div>
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-adobephotoshop"></span>
-              <h3>Photoshop</h3>
-            </a>
-          </div>
-
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-angular"></span>
-              <h3>Angular</h3>
-            </a>
-          </div>
-
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-javascript"></span>
-              <h3>JavaScript</h3>
-            </a>
-          </div>
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-react"></span>
-              <h3>React</h3>
-            </a>
-          </div>
-          <div class="col-lg-2">
-            <a href="#" class="course">
-              <span class="wrap-icon brand-vue-dot-js"></span>
-              <h3>Vue</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
 
     <!--Blank-->
     <div class="site-section bg-light">
@@ -469,56 +397,6 @@
       -->
     </div>
 
-    <!--Info-->
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-7 text-center mb-5">
-            <div class="heading">
-              <span class="caption">Servicios</span>
-              <h2>Nuestro Servicio</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2">
-              <h3 class="h5">Problema</h3>
-              <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nobis
-                  commodi harum, iste quae repudiandae facilis veniam nam earum nulla sunt fuga magnam ipsum obcaecati.
-                  Rem, atque recusandae! Ipsum veniam laboriosam quisquam in veritatis tempora architecto porro ea
-                  eveniet qui?</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2">
-              <h3 class="h5">Analisis </h3>
-              <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum"</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur officiis sapiente obcaecati nisi
-                  fuga saepe accusamus quidem doloremque voluptate assumenda et illo accusantium cumque tempore
-                  necessitatibus sit voluptatem nulla magni, ut iusto! Iusto doloribus, quia commodi quidem veritatis
-                  corrupti a ipsam hic corporis inventore est illo, impedit laborum, possimus molestias.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-4 mb-lg-0">
-            <div class="testimonial-2">
-              <h3 class="h5">Soluciones</h3>
-              <blockquote class="mb-4">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam.
-                  Ipsam, nam, voluptatum"</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maxime velit voluptates,
-                  assumenda quae, delectus praesentium harum blanditiis, amet tempora facere sapiente eum alias quos ad
-                  fugit ipsa! Eligendi, architecto voluptas, possimus illo eius inventore non natus aut in debitis
-                  repellat dolores sint maiores, pariatur eaque tempora! Sit, ducimus commodi.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!--Conection-->
     <div class="site-section bg-primary py-5 cta">
@@ -526,7 +404,7 @@
         <div class="row align-items-center">
           <div class="col-lg-7 mb-4 mb-md-0">
             <h2 class="mb-0 text-white">¿Interesado en nuestro servicio?</h2>
-            <p class="mb-0 opa-7">Te invitamos a pasar a nuestra sección de servicios para mas información</p>
+            <p class="mb-0 opa-7">Te invitamos a pasar a nuestra sección de servicios para más información</p>
           </div>
           <div class="col-lg-5 text-md-right">
             <a href="services.html" class="btn btn-primary btn-white"> Más Información</a>
@@ -563,7 +441,7 @@
                 <ul class="list-unstyled social">
                   <li><a href="https://www.facebook.com/DatatestOficial/" target="_blank"><span
                         class="icon-facebook"></span></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCCvq5NPsAGVJbb2i6guPptw?view_as=subscriber"
+                  <li><a href="https://www.youtube.com/channel/UCq0BBZlGXy3z8PS8TeEfSrg?view_as=subscriber"
                       target="_blank"><span class="icon-youtube"></span></a></li>
                 </ul>
               </div>
